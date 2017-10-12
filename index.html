@@ -59,11 +59,11 @@
 
       <div class="section">
         Key size:
-        <input type="radio" name="keysize" value="128" id="key128" checked="checked" autocomplete="off" onclick="extendKey(4)"/>
+        <input type="radio" name="keysize" value="128" id="key128" autocomplete="off" onclick="extendKey(4)"/>
         <label for="key128">128</label>
         <input type="radio" name="keysize" value="192" id="key192" autocomplete="off" onclick="extendKey(6)"/>
         <label for="key192">192</label>
-        <input type="radio" name="keysize" value="256" id="key256" autocomplete="off" onclick="extendKey(8)"/>
+        <input type="radio" name="keysize" value="256" id="key256" checked="checked" autocomplete="off" onclick="extendKey(8)"/>
         <label for="key256">256</label>
         <p class="explanation">
           128 bits should be secure enough, but you can generate a longer
@@ -137,11 +137,11 @@
       
       <div class="section">
         Authentication strength:
-        <input type="radio" name="tag" value="64" id="tag64" autocomplete="off" checked="checked"/>
+        <input type="radio" name="tag" value="64" id="tag64" autocomplete="off"/>
         <label for="tag64">64</label>
         <input type="radio" name="tag" value="96" id="tag96" autocomplete="off"/>
         <label for="tag96">96</label>
-        <input type="radio" name="tag" value="128" id="tag128" autocomplete="off"/>
+        <input type="radio" name="tag" value="128" id="tag128" autocomplete="off" checked="checked"/>
         <label for="tag128">128</label>
         <p class="explanation">
           SJCL adds a an authentication tag to your message to make sure
